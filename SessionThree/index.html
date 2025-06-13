@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Three - HTML Table and Form</title>
+</head>
+<body>
+    
+    <header>
+        <h1>HTML TABLE AND FORM</h1>
+    </header>
+    
+    <main>
+        <!-- main content / elements :> -->
+        <section>
+            <h2>HTML ENTITIES</h2>
+            <p>Reserved characters in HTML(eg. &lt; or &gt; -> characters that can mix up the HTML code.)</p>
+
+            <table border="1">
+                <!-- TABLE HEAD -->
+                <thead>
+                    <th>Entity</th>
+                    <th colspan="2">Description</th>
+                </thead>
+                <!-- TABLE HEAD -->
+                <!-- TABLE BODY -->
+                <tbody>
+                    <tr>
+                        <td>&lt;</td>
+                        <td>LT</td>
+                        <td>Less Than</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;</td>
+                        <td>GT</td>
+                        <td>Greater Than</td>
+                    </tr>
+                    <tr>
+                        <td>&quot;</td>
+                        <td>QUOT</td>
+                        <td>Double Quotation Mark</td>
+                    </tr>
+                </tbody>
+                <!-- TABLE FOOT -->
+                <tfoot>
+                    <tr>
+                        <th colspan="3">List of HTML Entities</th>
+                    </tr>
+                </tfoot>
+                <!-- TABLE FOOT -->
+                <!-- TABLE BODY -->
+            </table>
+
+        </section>
+
+        <section>
+            <h2>HTML Form</h2>
+            <p>Input elements that make up a form.</p>
+            
+            <!-- FORM/S -->
+            <form action="https://www.google.com/" target="_blank">
+                <!-- FULL NAME -->
+                <label for="full_name">Full Name</label><br>
+                <input type="text" id="full_name" name="full_name" required autocomplete><br>
+                <br>
+
+                <!-- DATE OF BIRTH -->
+                <label for="dob">Date of Birth</label><br>
+                <input type="date" id="dob" name="dob"> <br>
+                <br>
+
+                <!-- AGE -->
+                <label for="age">Age</label><br>
+                <input type="number" id="age" name="age"> <br>
+                <br>
+
+                <!-- GENDER -->
+                <label for="gender">Gender</label><br>
+                <select name="gender" id="gender">
+                    <option value="">~ Select ~</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                    <option value="O">Ohers</option>
+                </select><br><br>
+            
+                <!-- NOTES -->
+                <label for="notes">Notes</label>
+                <br>
+                <textarea name="notes" id="notes" rows="5"></textarea>
+                <br>
+
+                <button type="submit">Submit</button>
+            </form>
+            <!-- FORM -->
+
+        </section>
+    </main>
+
+</body>
+</html>
