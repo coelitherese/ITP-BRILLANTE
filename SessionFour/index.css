@@ -1,0 +1,30 @@
+.box{
+    width: 240px;
+    height: 240px;
+    background-color: aquamarine !important;
+}
+
+body{
+            background-color:brown;
+        }
+        h1{
+            color:pink;
+        }
+
+        /* ID Selector */
+        #Second{
+            color: burlywood;
+        }
+        #IIS{
+            color: chartreuse !important;
+        }
+        /* Class Selector */
+        .header{
+            color:lavender;
+        }
+        .font-size{
+            font-size: 50px;
+        }
+        font.color{
+            color: aqua;
+        }

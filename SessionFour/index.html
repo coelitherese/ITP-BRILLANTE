@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal, Inline, and External Styling</title>
+    <!-- LAHAT NG MGA 3RD PARTY APPLICATIONS SA HEAD ICOCONNECT! -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    
+
+
+    <style>
+        /* Internal Styling */
+        body{
+            background-color:brown;
+        }
+        h1{
+            color:pink;
+        }
+
+        /* ID Selector */
+        #Second{
+            color: burlywood;
+        }
+        #IIS{
+            color: chartreuse !important;
+        }
+        /* Class Selector */
+        .header{
+            color:lavender;
+        }
+        .font-size{
+            font-size: 50px;
+        }
+        font.color{
+            color: aqua;
+        }
+    </style>
+
+    <h1 id="First" class="header font-size">Internal, Inline, and External Styling.</h1>
+    <h2 class="header">Internal, Inline, and External Styling.</h2>
+    <h1 class="font.color" id="Second">Internal, Inline, and External Styling.</h1>
+        <!-- at the level of priority mas mataas yung level of power ng ID compared to Class -->
+    
+    <h3 id="IIS" style="color:aquamarine">Inline VS Internal Styling</h3>
+        <!-- inline styling is mas malakas kesa sa internal styling -->
+
+
+    <div class="box" style="background-color: coral;">
+    </div>
+
+   
+
+</body>
+</html>
