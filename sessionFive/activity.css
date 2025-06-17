@@ -1,0 +1,28 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+#EXT{
+    color: green;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+img{
+    border-radius: 150px;
+    height: 250px;
+    width: auto;
+}
+
+ul{
+    letter-spacing: 5px;
+    list-style-type: none;
+}
+
+section p{
+    text-align: center;
+}
+

@@ -1,0 +1,79 @@
+/* UNIVERSAL SELECTOR */
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+
+/* ELEMENT SELECTOR */
+body{
+    background-color:ivory;
+}
+
+nav{
+    background-color:pink;
+    padding: 20px;
+}
+
+div{
+    float: right;
+}
+
+/* ELEMENT OR TYPE/TAG SELECTOR */
+h1{
+    color: purple;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* LANDING SECTION */
+section{
+    height: 200vh;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+/* ID SELECTOR */
+#ua-motto{
+    letter-spacing: 8px;
+}
+
+/* CLASS SELECTOR */
+.modules{
+    letter-spacing: 5px;
+}
+
+/* ADJACENT SIBLING SELECTOR */
+/* Selector + Selector */
+h3 + img{
+    height: 300px;
+    width: auto;
+    border-radius: 30px;
+}
+
+ol{
+    list-style-type: none
+}
+
+.offering-item{
+    text-transform: uppercase;
+}
+
+/* DESCENDANT SELECTOR */
+/* selector selector */
+#bootcamp-learning-list li{
+    color: darkolivegreen;
+}
+
+/* GENERAL SIBLING SELECTOR */
+/* selector ~ selector */
+h2 ~ a{
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
