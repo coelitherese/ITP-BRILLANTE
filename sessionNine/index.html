@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Bootstrap and Grid System</title>
+    <!-- BOOTSTRAP LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body class="bg-secondary text-center">
+
+    <h1>Intro to Bootstrap and Grid System</h1>
+
+    <h3 class="mb-4">Common Typography Color Properties</h3>
+
+    <div class="container bg-dark p-5 mb-4">
+        <p class="text-primary">Primary Color</p>
+        <p class="text-warning">Warning Color</p>
+        <p class="text-danger">Danger Color</p>
+        <p class="text-dark">Dark Color</p>
+        <p class="text-light">Light Color</p>
+        <p class="text-white">White Color</p>
+        <p class="text-secondary">Secondary Color</p>
+        <p class="text-success">Success Color</p>
+    </div>
+
+    <h3 class="mb-4">Bootstrap Grid System</h3>
+
+    <div class="bg-dark container-fluid p-5 mb-4">
+        <h5 class="text-light">1:1 Ratio</h5>
+        <div class="row">
+            <div class="col-6 bg-primary p-5">
+                Col-6
+            </div>
+            <div class="col-6 bg-warning p-5">
+                Col-6
+            </div>
+        </div>
+
+        <h5 class="text-light">1:2 Ratio</h5>
+        <div class="row">
+            <div class="col-4 bg-primary p-5">
+                Col-4
+            </div>
+            <div class="col-8 bg-warning p-5">
+                Col-8
+            </div>
+        </div>
+
+        <h5 class="text-light">1:3 Ratio</h5>
+        <div class="row">
+            <div class="col-4 bg-primary p-5">
+                Col-4
+            </div>
+            <div class="col-4 bg-warning p-5">
+                Col-4
+            </div>
+            <div class="col-4 bg-primary p-5">
+                Col-4
+            </div>
+        </div>
+
+    </div>
+
+    <h3 class="mb-4">Dynamic Grid System</h3>
+
+    <div class="bg-dark container-fluid p-5 mb-4">
+
+        <h5 class="text-light">1:1 Ratio</h5>
+        <div class="row">
+            <div class="col-12 col-lg-6 col-md-4 bg-primary p-5">
+                Col-6
+            </div>
+            <div class="col-12 col-lg-6 col-md-8 bg-warning p-5">
+                Col-6
+            </div>
+        </div>
+
+    </div>
+
+    <h3>Grid System Sample Real-World Application</h3>
+
+    <div class="container-fluid p-5 bg-light">
+        <div class="row">
+            <div class="col-lg-6 col-12 col-md-4 bg-secondary">
+                <img src="https://camo.githubusercontent.com/ecd695fb1ffadab6633f9fcdffaeebc58f3cca722260f0dec7dc607bd9d0e740/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-12 col-md-8 bg-dark p-1 p-md-3 p-lg-5 text-light">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat enim corrupti amet tempore quisquam! Tempora voluptate odio quisquam! Quia iste sunt molestias doloremque, sit vitae architecto maiores ipsa vero quo?
+                Aliquam explicabo cum expedita ullam eos nesciunt numquam. Doloremque ducimus sapiente ipsam quisquam possimus. Tenetur vitae ex, officia, quibusdam dolore nesciunt illo natus nobis ut rerum eos inventore quod et.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="vh-100 bg-orange">
+        <p>Sample</p>
+    </div>
+
+
+    
+    
+
+
+
+    <!-- BOOTSTRAP SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
