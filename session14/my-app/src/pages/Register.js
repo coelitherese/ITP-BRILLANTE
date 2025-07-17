@@ -1,22 +1,22 @@
 import {  useEffect, useState } from "react"
 import { Container, Form, Button } from "react-bootstrap"
-import Swal from "sweetalert2"
-import { useAuth } from "../AuthContext"
-import { useNavigate } from "react-router-dom"
+import Swal from "sweetalert2";
+import { useAuth } from "../AuthContext";
+import { useNavigate } from "react-router-dom";
 
 
 export default function Register() {
 
-    const {user} = useAuth();
+    const { user } = useAuth();
     const navigate = useNavigate();
 
-    useEffect(() => {
-      document.title = "UTASK | REGISTER"
+  useEffect(() => {
+    document.title = "UTask - REGISTER";
+    if(user){
+      navigate("/tasks");
+    }
+  }, [user, navigate]);
 
-      if(user){
-        navigate("/tasks")
-      }
-    } , [user, navigate])
 
     let [fname, setFname] =useState("");
     let [mname, setMname] =useState("");
@@ -60,6 +60,23 @@ export default function Register() {
     function register(e){
         e.preventDefault();
 
+        if(pass !== confirmPass){
+            Swal.fire({
+                title: "OOPS!",
+                text: "Password do not match",
+                icon: "warning"
+            })
+            return;
+        }
+        if(pass.length < 8){
+            Swal.fire({
+                title: "OOPS!",
+                text: "Password must be 8 characters long.",
+                icon: "warning"
+            })
+            return;
+        }
+
         fetch("http://localhost:4000/users/register", {
             method: "POST",
             headers: {"Content-Type" : "application/json"},
@@ -67,12 +84,13 @@ export default function Register() {
         })
         .then(res => res.json())
         .then(data => {
-            if(data.code == 1){
+            if(data.code === 1){
                 Swal.fire({
                     title: "Registered!",
-                    text: data.details, 
+                    text: data.details,
                     icon: "success"
                 })
+
                 setFname("");
                 setMname("");
                 setLname("");
@@ -80,22 +98,23 @@ export default function Register() {
                 setPass("");
                 setConfirmPass("");
 
-            }else if (data.code == 2){
+            }else if(data.code === 2){
                 Swal.fire({
                     title: "OOPS!",
-                    text: data.details, 
+                    text: data.details,
                     icon: "warning"
                 })
             }else{
                 Swal.fire({
                     title: "OOPS!",
-                    text: data.details, 
+                    text: data.details,
                     icon: "error"
                 })
             }
         })
     }
 
+    
   return (
     <Container className="vh-100 d-flex align-items-center justify-content-center">
 
@@ -148,7 +167,7 @@ export default function Register() {
 
             <Button className="w-100 p-2" type="submit">Sign Up</Button>
 
-
+            <p className="mt-3">Already have an account? <a href="/login">Log in?</a></p>
         </Form>
         </Container>
         
